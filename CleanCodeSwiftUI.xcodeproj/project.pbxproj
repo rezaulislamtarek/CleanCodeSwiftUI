@@ -11,6 +11,15 @@
 		0B0107D12C05E7680071D67F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0107D02C05E7680071D67F /* ContentView.swift */; };
 		0B0107D32C05E7690071D67F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B0107D22C05E7690071D67F /* Assets.xcassets */; };
 		0B0107D62C05E7690071D67F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B0107D52C05E7690071D67F /* Preview Assets.xcassets */; };
+		0B0107E32C05E8140071D67F /* ContentRemoteDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0107E22C05E8140071D67F /* ContentRemoteDatasource.swift */; };
+		0B0107E82C05E8950071D67F /* ContentEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0107E72C05E8950071D67F /* ContentEntity.swift */; };
+		0B0107EA2C05E8FA0071D67F /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0107E92C05E8FA0071D67F /* ContentViewModel.swift */; };
+		0B0107EC2C05E98A0071D67F /* FetchContentUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0107EB2C05E98A0071D67F /* FetchContentUseCase.swift */; };
+		0B0107EE2C05EB3E0071D67F /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0107ED2C05EB3E0071D67F /* ContentRepository.swift */; };
+		0B0107F12C05EC2C0071D67F /* ContentDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0107F02C05EC2C0071D67F /* ContentDatasource.swift */; };
+		0B0107F42C05EC710071D67F /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0107F32C05EC710071D67F /* ContentModel.swift */; };
+		0B0107F72C05EEC40071D67F /* ContentRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0107F62C05EEC40071D67F /* ContentRepositoryImp.swift */; };
+		0B0107FA2C05EF790071D67F /* ContentMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B0107F92C05EF790071D67F /* ContentMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +28,15 @@
 		0B0107D02C05E7680071D67F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0B0107D22C05E7690071D67F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B0107D52C05E7690071D67F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0B0107E22C05E8140071D67F /* ContentRemoteDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRemoteDatasource.swift; sourceTree = "<group>"; };
+		0B0107E72C05E8950071D67F /* ContentEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentEntity.swift; sourceTree = "<group>"; };
+		0B0107E92C05E8FA0071D67F /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		0B0107EB2C05E98A0071D67F /* FetchContentUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchContentUseCase.swift; sourceTree = "<group>"; };
+		0B0107ED2C05EB3E0071D67F /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
+		0B0107F02C05EC2C0071D67F /* ContentDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDatasource.swift; sourceTree = "<group>"; };
+		0B0107F32C05EC710071D67F /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		0B0107F62C05EEC40071D67F /* ContentRepositoryImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepositoryImp.swift; sourceTree = "<group>"; };
+		0B0107F92C05EF790071D67F /* ContentMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +69,11 @@
 		0B0107CD2C05E7680071D67F /* CleanCodeSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				0B0107DF2C05E7C60071D67F /* External */,
+				0B0107DE2C05E7A80071D67F /* Presentation */,
+				0B0107DD2C05E79B0071D67F /* Infra */,
+				0B0107DC2C05E7920071D67F /* Domain */,
 				0B0107CE2C05E7680071D67F /* CleanCodeSwiftUIApp.swift */,
-				0B0107D02C05E7680071D67F /* ContentView.swift */,
 				0B0107D22C05E7690071D67F /* Assets.xcassets */,
 				0B0107D42C05E7690071D67F /* Preview Content */,
 			);
@@ -65,6 +86,116 @@
 				0B0107D52C05E7690071D67F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0B0107DC2C05E7920071D67F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				0B0107E62C05E8600071D67F /* UseCases */,
+				0B0107E52C05E8370071D67F /* Repositories */,
+				0B0107E42C05E8280071D67F /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		0B0107DD2C05E79B0071D67F /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				0B0107F82C05EF5C0071D67F /* Mappers */,
+				0B0107F52C05EE930071D67F /* Repositories */,
+				0B0107F22C05EC610071D67F /* Model */,
+				0B0107EF2C05EC0E0071D67F /* Datasource */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		0B0107DE2C05E7A80071D67F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				0B0107D02C05E7680071D67F /* ContentView.swift */,
+				0B0107E92C05E8FA0071D67F /* ContentViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		0B0107DF2C05E7C60071D67F /* External */ = {
+			isa = PBXGroup;
+			children = (
+				0B0107E02C05E7D80071D67F /* DataSource */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		0B0107E02C05E7D80071D67F /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				0B0107E12C05E7F00071D67F /* Remote */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		0B0107E12C05E7F00071D67F /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				0B0107E22C05E8140071D67F /* ContentRemoteDatasource.swift */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		0B0107E42C05E8280071D67F /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				0B0107E72C05E8950071D67F /* ContentEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		0B0107E52C05E8370071D67F /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				0B0107ED2C05EB3E0071D67F /* ContentRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0B0107E62C05E8600071D67F /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				0B0107EB2C05E98A0071D67F /* FetchContentUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		0B0107EF2C05EC0E0071D67F /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				0B0107F02C05EC2C0071D67F /* ContentDatasource.swift */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		0B0107F22C05EC610071D67F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0B0107F32C05EC710071D67F /* ContentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0B0107F52C05EE930071D67F /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				0B0107F62C05EEC40071D67F /* ContentRepositoryImp.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		0B0107F82C05EF5C0071D67F /* Mappers */ = {
+			isa = PBXGroup;
+			children = (
+				0B0107F92C05EF790071D67F /* ContentMapper.swift */,
+			);
+			path = Mappers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +268,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B0107FA2C05EF790071D67F /* ContentMapper.swift in Sources */,
+				0B0107F12C05EC2C0071D67F /* ContentDatasource.swift in Sources */,
+				0B0107EC2C05E98A0071D67F /* FetchContentUseCase.swift in Sources */,
 				0B0107D12C05E7680071D67F /* ContentView.swift in Sources */,
+				0B0107E32C05E8140071D67F /* ContentRemoteDatasource.swift in Sources */,
+				0B0107E82C05E8950071D67F /* ContentEntity.swift in Sources */,
 				0B0107CF2C05E7680071D67F /* CleanCodeSwiftUIApp.swift in Sources */,
+				0B0107F72C05EEC40071D67F /* ContentRepositoryImp.swift in Sources */,
+				0B0107EA2C05E8FA0071D67F /* ContentViewModel.swift in Sources */,
+				0B0107EE2C05EB3E0071D67F /* ContentRepository.swift in Sources */,
+				0B0107F42C05EC710071D67F /* ContentModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
